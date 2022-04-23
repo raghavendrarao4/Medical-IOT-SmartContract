@@ -1,0 +1,237 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_owner",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "_completed",
+						"type": "int256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_active",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "_discoverable",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_config",
+						"type": "string"
+					}
+				],
+				"name": "_create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_exists",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_fetchAll",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "owner",
+								"type": "string"
+							},
+							{
+								"internalType": "int256",
+								"name": "completed",
+								"type": "int256"
+							},
+							{
+								"internalType": "bool",
+								"name": "active",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "discoverable",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "config",
+								"type": "string"
+							}
+						],
+						"internalType": "struct OracleManager.Oracle[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_oracle_id",
+						"type": "uint256"
+					}
+				],
+				"name": "_fetchOracle",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "owner",
+								"type": "string"
+							},
+							{
+								"internalType": "int256",
+								"name": "completed",
+								"type": "int256"
+							},
+							{
+								"internalType": "bool",
+								"name": "active",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "discoverable",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "config",
+								"type": "string"
+							}
+						],
+						"internalType": "struct OracleManager.Oracle",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_oracle_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_active",
+						"type": "bool"
+					}
+				],
+				"name": "toggleActive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_oracle_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_discoverable",
+						"type": "bool"
+					}
+				],
+				"name": "toggleDiscoverable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_oracle_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_config",
+						"type": "string"
+					}
+				],
+				"name": "updateConfig",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/OracleManager.sol": "OracleManager"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/OracleManager.sol": {
+			"keccak256": "0xa44b0af7b72dd8d08a79ac8c01d5ce968277a8a53a11d3ae62558a576c37d45a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://79bbde086aa1a381bd1262a13f275275d3a5e8dc2f290002d17cf4fd11f82b9f",
+				"dweb:/ipfs/QmcAkaWQqpMVtJqWnmyTNKLdnNWxryTL6XgiyGWnsADegg"
+			]
+		}
+	},
+	"version": 1
+}

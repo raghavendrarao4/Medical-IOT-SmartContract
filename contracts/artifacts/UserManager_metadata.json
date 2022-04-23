@@ -1,0 +1,168 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_age",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_sex",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "_create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_exists",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_user_id",
+						"type": "uint256"
+					}
+				],
+				"name": "_fetch",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "age",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "sex",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							}
+						],
+						"internalType": "struct UserManager.User",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_fetchAll",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "age",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "sex",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							}
+						],
+						"internalType": "struct UserManager.User[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/UserManager.sol": "UserManager"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/UserManager.sol": {
+			"keccak256": "0x10c07b954eda86047bf9caae0bcb7b45d1747227437e427123b71d91d8126abb",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8b3a5b6b6f6999c628afb96c5fb3a44be7efcb011b2dd43fcffbf2b73369abe9",
+				"dweb:/ipfs/QmV9tJ1LeFsQjkuU1mTvDQJuXQ5Gqa9KneJEa73fijccqn"
+			]
+		}
+	},
+	"version": 1
+}
